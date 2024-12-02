@@ -1,7 +1,7 @@
 import { expect } from 'chai';
-import  hallo  from './hallo';
+import  hallo  from './hallo';  // an import changed
 
-import { another_import } from 'chai';
+import { another_import } from 'chai';  // an import added
 
 // this is a comment
 
@@ -10,6 +10,8 @@ describe(`Hallo`, () => {
         const name = 'Someone';
         const result = hallo(name);
         expect(result).equal(`Hallo ${name}`);
-        console.log('This is really a new line of code', name);  // really a new line
-    })  // just remove the trailing semicolon
+        // really a new line
+        console.log('This is really a new line of code', name);  
+    // in the line below we just remove the trailing semicolon
+    })
 });
