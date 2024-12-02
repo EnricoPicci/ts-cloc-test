@@ -2,6 +2,7 @@ import { expect } from 'chai';
 import  hallo  from './hallo';  // an import changed
 
 import { another_import } from 'chai';  // an import added
+import { one_more_import } from 'chai';  // an import added
 
 // this is a comment
 
